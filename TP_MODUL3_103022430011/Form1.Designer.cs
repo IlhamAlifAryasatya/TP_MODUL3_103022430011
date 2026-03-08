@@ -39,9 +39,9 @@
             btn7 = new Button();
             btn8 = new Button();
             btn9 = new Button();
+            btnEqual = new Button();
             btn0 = new Button();
             btnPlus = new Button();
-            btnEqual = new Button();
             tableLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -53,7 +53,6 @@
             labelOutput.Name = "labelOutput";
             labelOutput.Size = new Size(216, 35);
             labelOutput.TabIndex = 0;
-            labelOutput.Text = "0";
             labelOutput.TextAlign = ContentAlignment.MiddleCenter;
             labelOutput.Click += label1_Click;
             // 
@@ -95,6 +94,7 @@
             btn1.TabIndex = 0;
             btn1.Text = "1";
             btn1.UseVisualStyleBackColor = true;
+            btn1.Click += ButtonAngka_Click;
             // 
             // btn2
             // 
@@ -105,6 +105,7 @@
             btn2.TabIndex = 1;
             btn2.Text = "2";
             btn2.UseVisualStyleBackColor = true;
+            btn2.Click += ButtonAngka_Click;
             // 
             // btn3
             // 
@@ -115,7 +116,7 @@
             btn3.TabIndex = 2;
             btn3.Text = "3";
             btn3.UseVisualStyleBackColor = true;
-            btn3.Click += button3_Click;
+            btn3.Click += ButtonAngka_Click;
             // 
             // btn6
             // 
@@ -126,6 +127,7 @@
             btn6.TabIndex = 3;
             btn6.Text = "6";
             btn6.UseVisualStyleBackColor = true;
+            btn6.Click += ButtonAngka_Click;
             // 
             // btn5
             // 
@@ -136,6 +138,7 @@
             btn5.TabIndex = 4;
             btn5.Text = "5";
             btn5.UseVisualStyleBackColor = true;
+            btn5.Click += ButtonAngka_Click;
             // 
             // btn4
             // 
@@ -146,6 +149,7 @@
             btn4.TabIndex = 5;
             btn4.Text = "4";
             btn4.UseVisualStyleBackColor = true;
+            btn4.Click += ButtonAngka_Click;
             // 
             // btn7
             // 
@@ -156,6 +160,7 @@
             btn7.TabIndex = 6;
             btn7.Text = "7";
             btn7.UseVisualStyleBackColor = true;
+            btn7.Click += ButtonAngka_Click;
             // 
             // btn8
             // 
@@ -166,6 +171,7 @@
             btn8.TabIndex = 7;
             btn8.Text = "8";
             btn8.UseVisualStyleBackColor = true;
+            btn8.Click += ButtonAngka_Click;
             // 
             // btn9
             // 
@@ -176,28 +182,7 @@
             btn9.TabIndex = 8;
             btn9.Text = "9";
             btn9.UseVisualStyleBackColor = true;
-            btn9.Click += button9_Click;
-            // 
-            // btn0
-            // 
-            btn0.Dock = DockStyle.Fill;
-            btn0.Location = new Point(75, 169);
-            btn0.Name = "btn0";
-            btn0.Size = new Size(71, 52);
-            btn0.TabIndex = 10;
-            btn0.Text = "0";
-            btn0.UseVisualStyleBackColor = true;
-            // 
-            // btnPlus
-            // 
-            btnPlus.Dock = DockStyle.Fill;
-            btnPlus.Location = new Point(3, 169);
-            btnPlus.Name = "btnPlus";
-            btnPlus.Size = new Size(66, 52);
-            btnPlus.TabIndex = 11;
-            btnPlus.Text = "+";
-            btnPlus.UseVisualStyleBackColor = true;
-            btnPlus.Click += button12_Click;
+            btn9.Click += ButtonAngka_Click;
             // 
             // btnEqual
             // 
@@ -208,6 +193,29 @@
             btnEqual.TabIndex = 9;
             btnEqual.Text = "=";
             btnEqual.UseVisualStyleBackColor = true;
+            btnEqual.Click += btnEqual_Click;
+            // 
+            // btn0
+            // 
+            btn0.Dock = DockStyle.Fill;
+            btn0.Location = new Point(75, 169);
+            btn0.Name = "btn0";
+            btn0.Size = new Size(71, 52);
+            btn0.TabIndex = 10;
+            btn0.Text = "0";
+            btn0.UseVisualStyleBackColor = true;
+            btn0.Click += ButtonAngka_Click;
+            // 
+            // btnPlus
+            // 
+            btnPlus.Dock = DockStyle.Fill;
+            btnPlus.Location = new Point(3, 169);
+            btnPlus.Name = "btnPlus";
+            btnPlus.Size = new Size(66, 52);
+            btnPlus.TabIndex = 11;
+            btnPlus.Text = "+";
+            btnPlus.UseVisualStyleBackColor = true;
+            btnPlus.Click += btnPlus_Click;
             // 
             // Form1
             // 
